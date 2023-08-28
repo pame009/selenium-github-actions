@@ -19,7 +19,7 @@ for option in options:
     chrome_options.add_argument(option)
 
 # Providing the path to the downloaded Chrome driver
-driver = webdriver.Chrome(executable_path=chrome_driver_path, options=chrome_options)
+driver = webdriver.Chrome(options=chrome_options)
 
 driver.get('http://nytimes.com')
 print(driver.title)
